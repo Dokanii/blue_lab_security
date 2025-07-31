@@ -1,0 +1,37 @@
+# Baseline net – 2025-07-31
+
+ Static hostname: blue-pi
+       Icon name: computer
+      Machine ID: 6dd9a3ee051941eeafb4e2d88f997045
+         Boot ID: 0a18db35733949128f46b7c00795c47e
+Operating System: Debian GNU/Linux 12 (bookworm)
+          Kernel: Linux 6.12.25+rpt-rpi-2712
+    Architecture: arm64
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 2c:cf:67:e8:4d:33 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.127/24 brd 192.168.1.255 scope global dynamic noprefixroute eth0
+       valid_lft 79202sec preferred_lft 79202sec
+    inet6 2001:861:5e60:59b0:52c8:4720:85a3:e9ea/64 scope global dynamic noprefixroute
+       valid_lft 86141sec preferred_lft 14141sec
+    inet6 fe80::ead0:e636:7851:915a/64 scope link noprefixroute
+       valid_lft forever preferred_lft forever
+3: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 2c:cf:67:e8:4d:34 brd ff:ff:ff:ff:ff:ff
+default via 192.168.1.254 dev eth0 proto dhcp src 192.168.1.127 metric 100
+192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.127 metric 100
+
+DEVICE  TYPE      STATE                   CONNECTION
+eth0    ethernet  connected               Wired connection 1
+lo      loopback  connected (externally)  lo
+wlan0   wifi      unavailable             --
+
+NAME                UUID                                  TYPE      DEVICE
+Wired connection 1  2b9b4587-423c-3fbb-8fef-877879b2c22f  ethernet  eth0
+lo                  26075c03-3107-46ac-ab56-77fa086ba684  loopback  lo

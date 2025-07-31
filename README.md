@@ -1,18 +1,32 @@
 # Blue Lab Security
 
-Petit lab Blue Team : Nmap automatisé, Suricata + OpenSearch, mémo CCNA/CEH.  
-Objectif : un mini-SOC fonctionnel avant les offres de stage 2026.
+#### Mini-lab Blue Team pour entraînement SOC maison (Home SOC).
+
+### Objectifs :
+1. Détecter du trafic suspect sur un petit LAN isolé
+2. Automatiser des scans (Nmap) et alertes (Suricata)
+3. Centraliser les logs pour visualisation type SOC
 
 ### Matériel
-1. Raspberry Pi 5 (8 Go)       — hyperviseur Docker
-2. Netgear GS305EP             — VLAN & port-mirror
-3. PC portable                 — IDE + Packet Tracer
+- Raspberry Pi 5 (8 Go) – Docker + Suricata
+- Netgear GS305EP – VLANs + port-mirroring
+- PC portable – IDE + tests Nmap
 
-### Premiers objectifs
-- [ ] Scan Nmap automatisé
-- [ ] Suricata + OpenSearch
-- [ ] Notes CCNA/CEH
+### État du projet
+- [X] Raspberry Pi accessible en SSH
+- [X] Topologie réseau initiale documentée
+- [ ] Configuration Suricata
+- [ ] Dashboard OpenSearch
+- [ ] Scripts d’automatisation Nmap
+
+### Topology
 
 ![Draft topology](docs/topology.png)
 
-MIT Licence – tests limités à mon réseau lab.
+### Documentation
+- [docs/ip_plan.md](docs/ip_plan.md) – Plan IP actuel
+- [configs/](configs) – Sauvegardes de config Pi & switch
+
+---
+
+MIT Licence – usage limité à mon réseau lab.
